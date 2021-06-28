@@ -6,3 +6,9 @@ attention it deserves!! ;)
 The project also include Bootstrap by default
 in the index.html to give you a bit of a head-
 start :D*/
+
+.carousel {
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+}

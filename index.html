@@ -4,7 +4,7 @@
 
   <!-- CSS (this is how you style your website, we have also included Bootstrap to give you a head start, as well as an extra one you can edit as you see fit -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href='./assets/css/styles.css'> <!-- edit this file to include your own styles :D -->
+  <link href='./assets/css/styles.css' rel='stylesheet'> <!-- edit this file to include your own styles :D -->
 
   <!-- metadata (allows us to specify some useful things like keywords and descriptions) -->
   <meta charset='UTF-8'>
@@ -39,7 +39,63 @@
     </div>
   </nav>
   <br/>
+
+  <!-- This is a container, it automatically keeps your content inside your webpage -->
+  <div class="container">
+    <h2> Example website </h2>
+
+    <!-- Here's an example carousell! It displays multiple images! You can include your own! -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <!-- ❗️ You should swap these to be your own images! -->
+      <div class="carousel-inner">
+	<div class="carousel-item active">
+          <img src="https://picsum.photos/200/100?grayscale" class="d-block w-100" alt="Add alt text for accessiblity reasons!">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/200/100?grayscale" class="d-block w-100" alt="Add alt text for accessiblity reasons!">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/200/100?grayscale" class="d-block w-100" alt="Add alt text for accessiblity reasons!">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Split your content into columns!! -->
+    <div class="row mt-5">
+      <div class="col-12 col-lg-8">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ligula ex. Duis quis nunc turpis. Cras euismod et metus sit amet lacinia. Mauris sodales sapien ut enim gravida, sit amet pretium turpis placerat. Etiam ac massa in arcu tempor rhoncus. Fusce in ex eget purus convallis bibendum. Donec pellentesque tempor nibh, et euismod odio auctor in. Mauris sollicitudin aliquet ex, ac ultricies dolor accumsan ut. Integer id congue nisl, vitae ultrices velit. Curabitur purus dolor, consectetur porta sollicitudin ac, eleifend ut ligula. Duis porttitor, nulla vulputate imperdiet iaculis, lectus purus efficitur eros, vel mollis tortor dui non justo. Mauris sapien orci, consectetur in faucibus id, mattis ut nisi. Donec rutrum cursus nunc nec ornare. Vestibulum vestibulum nibh eu auctor pretium. Sed sem augue, porta vitae luctus eget, molestie nec augue. Duis lacus nisl, viverra ac semper ac, tincidunt a arcu.
+
+Nullam volutpat euismod risus. Duis id aliquam leo, eget viverra eros. Donec ullamcorper erat vel risus accumsan, vitae mattis quam sagittis. Vestibulum vel pretium eros. Sed rhoncus mauris in rutrum tempus. Fusce eget finibus lectus. Nulla consequat dapibus erat a feugiat. Vivamus in purus tempus, accumsan leo quis, semper nulla. Quisque nec tortor a elit sollicitudin dapibus quis non tortor. Nunc at lectus sodales, pharetra purus id, convallis nulla.</p>
+      </div>
+      <div class="col-12 col-lg-4">
+	<!-- This is example card! You include one for you and your team mates! -->
+        <div class="card">
+          <img src="./assets/images/blahaj.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">❗️ You could include some info about yourself in the sidebar! In this example, we have just included Blahaj.</p>
+          </div>
+        </div>
+        <br />
+        <!-- You can also have links in your sidebar! -->
+        <ul class="list-group">
+          <li class="list-group-item"><a href="https://init.mlh.io">Check out INIT</a></li>
+          <li class="list-group-item"><a href="https://github.com/Karnak123/mlh-hackathon-bootstrap-starter">Visit the GitHub Repo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   
   <!-- Bootstrap's JavaScript, it is what makes the website interacive -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- JavaScript (include your own javascript files here!) -->
+  <script src='./assets/js/script.js'></script>
 </body>
